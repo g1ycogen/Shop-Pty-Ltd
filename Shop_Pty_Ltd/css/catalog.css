@@ -1,0 +1,43 @@
+.catalog-hero {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  margin: var(--space-5) auto var(--space-6);
+}
+
+.catalog-hero img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+  aspect-ratio: 1398 / 104;
+}
+
+.catalog-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+  align-items: start;
+}
+
+.catalog-sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog-main {
+  min-width: 0;
+}
+
+.catalog-title {
+  font-size: var(--fs-xl);
+  font-weight: var(--fw-semibold);
+  margin-bottom: var(--space-4);
+}
+
+@media (min-width: 900px) {
+  .catalog-layout {
+    grid-template-columns: 258px 1fr;
+  }
+}
